@@ -40,6 +40,26 @@ A powerful tool for Malaysian marketers to create comprehensive pre-marketing te
    ```
    Or run the program and enter your API key when prompted.
 
+## Model Configuration
+
+The default model is set to `deepseek/deepseek-chat-v3-0324:free`. You can change the model by modifying the `model` variable in the `PreMarketingGenerator` class. Here are some popular models you can use:
+
+### OpenRouter Models
+- `deepseek/deepseek-chat-v3-0324:free` (default)
+- `openai/gpt-3.5-turbo`
+- `openai/gpt-4`
+- `google/gemini-pro`
+- `anthropic/claude-3-opus`
+- `anthropic/claude-3-sonnet`
+- `meta-llama/llama-2-70b-chat`
+
+To change the model, edit `premarketing_generator.py` and update this line:
+```python
+self.model = "your-preferred-model"  # Change this to your desired model
+```
+
+Note: Different models may have different pricing and capabilities. Check [OpenRouter's model list](https://openrouter.ai/models) for the most up-to-date information.
+
 ## Usage
 
 1. Run the program:
