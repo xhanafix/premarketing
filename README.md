@@ -1,119 +1,96 @@
-# Pre-Marketing Template Generator
+# Penjana Kandungan Pra-Pemasaran (Pre-Marketing Content Generator)
 
-A powerful tool for Malaysian marketers to create comprehensive pre-marketing templates using AI. This tool generates structured content including product information, customer avatars, and marketing offers in Bahasa Malaysia.
+A powerful web application that helps entrepreneurs and marketers generate comprehensive pre-marketing documentation for their products using AI technology.
 
-## Features
+## 🌟 Features
 
-- 🤖 AI-powered content generation using OpenRouter API
-- 📝 Interactive input for product details
-- 👥 Creation of 3 detailed customer avatars
-- 💡 Generation of marketing offers for each avatar
-- 📄 Automatic PDF generation with professional formatting
-- 🇲🇾 Support for Bahasa Malaysia content
-- 🔒 Secure API key management using environment variables
+- **AI-Powered Content Generation**: Utilizes OpenRouter API to generate high-quality marketing content
+- **Comprehensive Structure**: Follows the PRE MARKETING framework including:
+  - Problem & Solution Analysis
+  - Product Mechanism
+  - Usage Instructions
+  - Customer Avatars
+  - Marketing Angles
+  - Product Offers
+- **User-Friendly Interface**: Modern, responsive design with dark mode support
+- **Export Options**: Export generated content to CSV format
+- **Secure**: API keys are stored locally in the browser
+- **Multilingual**: Currently supports Bahasa Malaysia
 
-## Installation
+## 🚀 Getting Started
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/xhanafix/premarketing.git
-   cd premarketing
-   ```
+### Prerequisites
 
-2. Create a virtual environment (recommended):
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+- A modern web browser (Chrome, Firefox, Safari, Edge)
+- An OpenRouter API key (get one at [OpenRouter](https://openrouter.ai))
 
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+### Installation
 
-## API Setup
+1. Clone or download this repository
+2. Open `index2.html` in your web browser
+3. Enter your OpenRouter API key
+4. Start generating content!
 
-1. Get your API key from [OpenRouter](https://openrouter.ai/)
-2. Create a `.env` file in the project root:
-   ```
-   OPENROUTER_API_KEY=your_api_key_here
-   ```
-   Or run the program and enter your API key when prompted.
+## 💻 Usage
 
-## Model Configuration
+1. **Enter API Details**:
+   - Input your OpenRouter API key
+   - Select the AI model (e.g., gpt-4-turbo)
 
-The default model is set to `deepseek/deepseek-chat-v3-0324:free`. You can change the model by modifying the `model` variable in the `PreMarketingGenerator` class. Here are some popular models you can use:
+2. **Product Information**:
+   - Enter your brand name
+   - Input product name
+   - Provide detailed product description
 
-### OpenRouter Models
-- `deepseek/deepseek-chat-v3-0324:free` (default)
-- `openai/gpt-3.5-turbo`
-- `openai/gpt-4`
-- `google/gemini-pro`
-- `anthropic/claude-3-opus`
-- `anthropic/claude-3-sonnet`
-- `meta-llama/llama-2-70b-chat`
+3. **Generate Content**:
+   - Click "Jana" to generate content
+   - Use "Menjana Semula" to regenerate if needed
+   - Export to CSV using "Eksport CSV"
 
-To change the model, edit `premarketing_generator.py` and update this line:
-```python
-self.model = "your-preferred-model"  # Change this to your desired model
-```
+## 🔧 Features in Detail
 
-Note: Different models may have different pricing and capabilities. Check [OpenRouter's model list](https://openrouter.ai/models) for the most up-to-date information.
+### Content Generation
+- Generates comprehensive pre-marketing documentation
+- Includes problem-solution analysis
+- Creates detailed customer avatars
+- Suggests marketing angles and strategies
 
-## Usage
+### Export Functionality
+- Exports content in CSV format
+- Includes timestamps in filenames
+- Properly formatted for spreadsheet software
 
-1. Run the program:
-   ```bash
-   python premarketing_generator.py
-   ```
+### UI Features
+- Dark/Light mode toggle
+- Responsive design
+- Loading indicators
+- Copy to clipboard functionality
 
-2. Follow the prompts to enter:
-   - Brand name
-   - Product name
-   - Product description
+## 🔒 Security
 
-3. The program will automatically generate:
-   - Product information
-   - Customer avatars
-   - Marketing offers
+- API keys are stored locally in the browser
+- No data is sent to external servers except for API calls
+- No content is stored on the server
 
-4. A PDF file will be generated with the format: `premarketing_template_YYYYMMDD_HHMMSS.pdf`
+## 🎨 Customization
 
-## Template Structure
+The application uses:
+- Tailwind CSS for styling
+- Font Awesome for icons
+- Custom animations and transitions
 
-### PART 1 – PRODUK
-- Problem and solution
-- Product mechanism/ingredients
-- Usage instructions
+## 📝 License
 
-### PART 2 – AVATAR & PERSONA
-For each avatar:
-- Name, age, occupation
-- Demographics
-- User story
-- Daily routine
-- Goals and frustrations
+This project is open source and available under the MIT License.
 
-### PART 3 – OFFER
-For each avatar:
-- 10 headline ideas
-- 5 intro paragraphs
-- 3 product promises
-- Creative suggestions for ads
-
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
+## 📞 Support
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+For support, please open an issue in the repository.
 
-## Author
+---
 
-- [xhanafix](https://github.com/xhanafix)
-
-## Acknowledgments
-
-- OpenRouter API for AI content generation
-- ReportLab for PDF generation 
+Made with ❤️ for entrepreneurs and marketers 
